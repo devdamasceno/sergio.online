@@ -23,12 +23,12 @@ export function Header() {
                                 onClick={openMenu}>Home</a>
                         </li>
                         <li className={styles.navitem}>
-                            <a href='/Aplicacoes' className={isOpen === false ?
+                            <a href='/aplicacoes' className={isOpen === false ?
                                 styles.navlink : styles.navlink + ' ' + styles.active}
                                 onClick={openMenu}>Aplicações</a>
                         </li>
                         <li className={styles.navitem}>
-                            <a href='/Contato' className={isOpen === false ?
+                            <a href='/contato' className={isOpen === false ?
                                 styles.navlink : styles.navlink + ' ' + styles.active}
                                 onClick={openMenu}>Contato</a>
                         </li>
