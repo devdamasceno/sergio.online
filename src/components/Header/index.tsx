@@ -1,6 +1,8 @@
 import { useState } from "react";
 import styles from "./Layout.module.css";
-import styles2 from './Home.module.css'
+import styles2 from './Home.module.css';
+
+import logo from '../../assets/logo.png';
 
 export function Header() {
 
@@ -12,7 +14,10 @@ export function Header() {
             <header className={styles2.header}>
                 <nav className={styles.navbar}>
 
-                    <a href='/' className={styles.navlogo}>Logo</a>
+                    <a href="/">
+                        <img src={logo.src}  className={styles.navlogo} />
+                    </a>
+                    
 
                     <ul className={isOpen === false ?
                         styles.navmenu : styles.navmenu + ' ' + styles.active}>
