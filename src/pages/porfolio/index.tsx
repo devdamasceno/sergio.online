@@ -1,16 +1,16 @@
 import Head from "next/head";
 import { Header } from "../../components/Header";
 
-export default function Contato() {
+export default function Portfolio() {
   return (
     <>
       <Head>
-        <title> Contato | Sérgio Damasceno</title>
+        <title> Portfólio | Sérgio Damasceno</title>
       </Head>
       <div>
         <Header />
       </div>
-      <p>Contato</p>
+      <p>Portfolio</p>
     </>
 
   )

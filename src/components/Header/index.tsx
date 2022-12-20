@@ -2,7 +2,7 @@ import { useState } from "react";
 import styles from "./Layout.module.css";
 import styles2 from './Home.module.css';
 
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logo.svg';
 
 export function Header() {
 
@@ -28,9 +28,14 @@ export function Header() {
                                 onClick={openMenu}>Home</a>
                         </li>
                         <li className={styles.navitem}>
-                            <a href='/aplicacoes' className={isOpen === false ?
+                            <a href='/porfolio' className={isOpen === false ?
                                 styles.navlink : styles.navlink + ' ' + styles.active}
-                                onClick={openMenu}>Aplicações</a>
+                                onClick={openMenu}>Portfólio</a>
+                        </li>
+                        <li className={styles.navitem}>
+                            <a href='/produtos' className={isOpen === false ?
+                                styles.navlink : styles.navlink + ' ' + styles.active}
+                                onClick={openMenu}>Produtos</a>
                         </li>
                         <li className={styles.navitem}>
                             <a href='/contato' className={isOpen === false ?
