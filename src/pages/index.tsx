@@ -1,4 +1,5 @@
 import Head from "next/head";
+
 import { Header } from "../components/Header";
 
 
@@ -9,6 +10,9 @@ export default function Home() {
         <title> Home | Sérgio Damasceno</title>
       </Head>
       <Header />
+
+      
+
     </>
 
   )

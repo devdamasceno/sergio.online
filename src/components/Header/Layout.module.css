@@ -34,14 +34,14 @@
   margin-left: 3rem;
 }
 
-.navlink{
+.navlink {
   font-size: 1rem;
   font-weight: 400;
   color: #c4c4cc;
   text-transform: capitalize;
 }
 
-.navlink:hover{
+.navlink:hover {
   color: #e1e1e6;
 }
 
@@ -53,61 +53,110 @@
   color: #e1e1e6;
 }
 
+.navmenuLogin {
+  display: flex;
+  flex-direction: row;
+}
+
+.navitemLogin {
+  display: flex;
+  align-items: center;
+}
+
+.imgLogin {
+  align-items: center;
+  margin-right: 0.5rem;
+}
+
+
 @media only screen and (max-width: 768px) {
   .navmenu {
-      position: fixed;
-      left: -100%;
-      top: 4.8rem;
-      flex-direction: column;
-      background-color: #121214;
-      width: 100%;
-      border-radius: 0px;
-      text-align: center;
-      transition: 0.3s;
-      box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    position: fixed;
+    left: -100%;
+    top: 4.8rem;
+    flex-direction: column;
+    background-color: #121214;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    
+  }
+
+  .navmenuLogin {
+    position: fixed;
+    left: -100%;
+    top: 23rem;
+    flex-direction: column;
+    background-color: transparent;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .navmenuLogin.active {
+    left: 0;
   }
 
   .navmenu.active {
-      left: 0;
+    left: 0;
   }
 
   .navitem {
-      margin: 2.5rem 0;
+    margin: 1.5rem 0;
   }
 
   .hamburger {
-      display: block;
-      cursor: pointer;
+    display: block;
+    cursor: pointer;
   }
 
   .hamburger.active .bar:nth-child(2) {
-      opacity: 0;
+    opacity: 0;
   }
 
   .hamburger.active .bar:nth-child(1) {
-      -webkit-transform: translateY(8px) rotate(45deg);
-      transform: translateY(8px) rotate(45deg);
+    -webkit-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
   }
 
   .hamburger.active .bar:nth-child(3) {
-      -webkit-transform: translateY(-8px) rotate(-45deg);
-      transform: translateY(-8px) rotate(-45deg);
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
   }
-}
 
-.footer {
-  font-size: 1.5rem;
-}
 
-.navlogo {
-  
-  display: flex;
+  .footer {
+    font-size: 1.5rem;
+  }
 
-  height: 4rem;
-  width: 230px;
-}
+  .navlogo {
 
-.navbar {
-  height: 3rem;
-  padding: 0.8rem 1rem;
+    display: flex;
+
+    height: 4rem;
+    width: 230px;
+  }
+
+  .navbar {
+    height: 3rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .navitemLogin {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+
+    margin-bottom: 2rem;
+    justify-content: center;
+  }
+
+  .imgLogin {
+    margin-right: 0.5rem;
+  }
+
+
+
 }

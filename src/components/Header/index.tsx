@@ -3,6 +3,7 @@ import styles from "./Layout.module.css";
 import styles2 from './Home.module.css';
 
 import logo from '../../assets/logo.svg';
+import login from '../../assets/entrar.svg';
 
 export function Header() {
 
@@ -15,9 +16,8 @@ export function Header() {
                 <nav className={styles.navbar}>
 
                     <a href="/">
-                        <img src={logo.src}  className={styles.navlogo} />
+                        <img src={logo.src} className={styles.navlogo} />
                     </a>
-                    
 
                     <ul className={isOpen === false ?
                         styles.navmenu : styles.navmenu + ' ' + styles.active}>
@@ -42,7 +42,29 @@ export function Header() {
                                 styles.navlink : styles.navlink + ' ' + styles.active}
                                 onClick={openMenu}>Contato</a>
                         </li>
+
+
                     </ul>
+
+                    <div className={isOpen === false ?
+                        styles.navmenuLogin : styles.navmenuLogin + ' ' + styles.active}>
+                        <li className={styles.navitemLogin}>
+                            <img className={styles.imgLogin} src={login.src} />
+                            <a href='/entrar' className={isOpen === false ?
+                                styles.navlink : styles.navlink + ' ' + styles.active}
+                                onClick={openMenu}>Entrar</a>
+                        </li>
+
+                        <li className={styles.navitemLogin}>
+                            <a href='/login' className={isOpen === false ?
+                                styles.navlink : styles.navlink + ' ' + styles.active}
+                                onClick={openMenu}>Login</a>
+                        </li>
+                    </div>
+
+
+
+
                     <button className={isOpen === false ?
                         styles.hamburger : styles.hamburger + ' ' + styles.active}
                         onClick={openMenu}
