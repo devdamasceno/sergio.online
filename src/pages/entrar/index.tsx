@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Header } from "../../components/Header";
+import styles from "./styles.module.scss";
 
 export default function Entrar() {
   return (
@@ -8,7 +8,9 @@ export default function Entrar() {
         <title> Contato | Sérgio Damasceno</title>
       </Head>
 
-      <p>Entrar</p>
+      <main className={styles.container}>
+        login
+      </main>
     </>
 
   )
