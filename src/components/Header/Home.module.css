@@ -1,5 +1,14 @@
 .header {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.057);
+
+  border: 1px solid;
+  border-image-source: linear-gradient(90deg, #ffffffb5 23.96%, rgba(253, 93, 0, 0.47) 47.92%, #e89301b5 75.52%, #cddb02c5 100%);
+    
+  border-image-slice: 1;
+
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+
 }
 
 

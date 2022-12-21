@@ -73,29 +73,13 @@
   .navmenu {
     position: fixed;
     left: -100%;
-    top: 4.8rem;
+    top: 5.6rem;
     flex-direction: column;
     background-color: #121214;
     width: 100%;
     text-align: center;
     transition: 0.3s;
     
-  }
-
-  .navmenuLogin {
-    position: fixed;
-    left: -100%;
-    top: 23rem;
-    flex-direction: column;
-    background-color: transparent;
-    width: 100%;
-    text-align: center;
-    transition: 0.3s;
-    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-  }
-
-  .navmenuLogin.active {
-    left: 0;
   }
 
   .navmenu.active {
@@ -109,6 +93,7 @@
   .hamburger {
     display: block;
     cursor: pointer;
+    margin-top: -0.2rem;
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -131,32 +116,29 @@
   }
 
   .navlogo {
-
     display: flex;
-
+    align-items: center;
     height: 4rem;
     width: 230px;
   }
 
   .navbar {
     height: 3rem;
-    padding: 0.8rem 1rem;
+    padding: 1.2rem 1rem;
   }
 
-  .navitemLogin {
-    display: flex;
+  .navmenuLogin {
     width: 100%;
-    text-align: center;
-    margin: 0 auto;
-
-    margin-bottom: 2rem;
-    justify-content: center;
+    justify-content: end;
+    margin-right: 1rem;
+    align-items: center;
   }
 
   .imgLogin {
-    margin-right: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    align-items: center;
+    justify-content: center;
   }
-
-
 
 }

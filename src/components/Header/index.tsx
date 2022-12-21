@@ -3,7 +3,7 @@ import styles from "./Layout.module.css";
 import styles2 from './Home.module.css';
 
 import logo from '../../assets/logo.svg';
-import login from '../../assets/entrar.svg';
+import login from '../../assets/user.svg';
 
 export function Header() {
 
@@ -43,27 +43,16 @@ export function Header() {
                                 onClick={openMenu}>Contato</a>
                         </li>
 
-
                     </ul>
 
                     <div className={isOpen === false ?
                         styles.navmenuLogin : styles.navmenuLogin + ' ' + styles.active}>
                         <li className={styles.navitemLogin}>
-                            <img className={styles.imgLogin} src={login.src} />
-                            <a href='/entrar' className={isOpen === false ?
-                                styles.navlink : styles.navlink + ' ' + styles.active}
-                                onClick={openMenu}>Entrar</a>
-                        </li>
-
-                        <li className={styles.navitemLogin}>
-                            <a href='/login' className={isOpen === false ?
-                                styles.navlink : styles.navlink + ' ' + styles.active}
-                                onClick={openMenu}>Login</a>
+                            <a href="/entrar">
+                                <img className={styles.imgLogin} src={login.src} />
+                            </a>
                         </li>
                     </div>
-
-
-
 
                     <button className={isOpen === false ?
                         styles.hamburger : styles.hamburger + ' ' + styles.active}

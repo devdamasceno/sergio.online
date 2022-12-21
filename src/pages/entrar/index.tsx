@@ -7,9 +7,7 @@ export default function Entrar() {
       <Head>
         <title> Contato | Sérgio Damasceno</title>
       </Head>
-      <div>
-        <Header />
-      </div>
+
       <p>Entrar</p>
     </>
 
