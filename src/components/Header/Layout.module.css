@@ -21,7 +21,7 @@
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #c4c4cc;
+  background-color: #737380;
 
 }
 
@@ -37,7 +37,7 @@
 .navlink {
   font-size: 1rem;
   font-weight: 400;
-  color: #c4c4cc;
+  color: #737380;
   text-transform: capitalize;
 }
 
@@ -46,11 +46,9 @@
 }
 
 .navlogo {
-  height: 82px;
-  width: 300px;
-  font-size: 2.1rem;
-  font-weight: 500;
-  color: #e1e1e6;
+  height: 78px;
+  width: 280px;
+
 }
 
 .navmenuLogin {
@@ -63,9 +61,12 @@
   align-items: center;
 }
 
-.imgLogin {
-  align-items: center;
-  margin-right: 0.5rem;
+.loginImg {
+  color: #737380;
+}
+
+.loginImg:hover {
+  color: #FFFFFF;
 }
 
 
@@ -79,7 +80,6 @@
     width: 100%;
     text-align: center;
     transition: 0.3s;
-    
   }
 
   .navmenu.active {
@@ -134,11 +134,6 @@
     align-items: center;
   }
 
-  .imgLogin {
-    width: 1.5rem;
-    height: 1.5rem;
-    align-items: center;
-    justify-content: center;
-  }
+
 
 }

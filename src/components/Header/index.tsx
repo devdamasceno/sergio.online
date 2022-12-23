@@ -3,7 +3,6 @@ import styles from "./Layout.module.css";
 import styles2 from './Home.module.css';
 
 import logo from '../../assets/logo.svg';
-import login from '../../assets/user.svg';
 
 import { User } from "phosphor-react";
 
@@ -51,7 +50,7 @@ export function Header() {
                         styles.navmenuLogin : styles.navmenuLogin + ' ' + styles.active}>
                         <li className={styles.navitemLogin}>
                             <a href="/entrar">
-                                <User size={25}/>
+                                <User className={styles.loginImg} size={25} />
                             </a>
                         </li>
                     </div>
