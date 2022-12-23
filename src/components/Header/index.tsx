@@ -50,7 +50,7 @@ export function Header() {
                         styles.navmenuLogin : styles.navmenuLogin + ' ' + styles.active}>
                         <li className={styles.navitemLogin}>
                             <a href="/entrar">
-                                <User className={styles.loginImg} size={25} />
+                                <User className={styles.loginImg} size={24} />
                             </a>
                         </li>
                     </div>
