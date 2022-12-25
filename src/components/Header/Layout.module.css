@@ -35,14 +35,23 @@
 }
 
 .navlink {
+
+  display: flex;
+  align-items: center;
+
   font-size: 1rem;
   font-weight: 400;
   color: #737380;
   text-transform: capitalize;
+
 }
 
 .navlink:hover {
   color: #e1e1e6;
+
+  padding-right: 1rem;
+  padding-left: 1rem;
+
 }
 
 .navlogo {
@@ -74,9 +83,9 @@
   .navmenu {
     position: fixed;
     left: -100%;
-    top: 5.6rem;
+    top: 5.5rem;
     flex-direction: column;
-    background-color: #121214;
+    background-color: #202024bd;
     width: 100%;
     text-align: center;
     transition: 0.3s;
