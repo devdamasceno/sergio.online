@@ -1,18 +1,19 @@
 .container {
-  display: flex;
   max-width: 1440px;
-
   margin: 0 auto;
+  padding: 0 1rem;
 
+  background-image: url(../../assets/imgMain.svg);
+  background-repeat: no-repeat;
 
-
+  background-position: right;
+  
 }
 
 .content {
   width: 100%;
   display: flex;
   justify-content: space-between;
-
   height: 80vh;
 
 }
@@ -25,7 +26,6 @@
   h2 {
     display: flex;
 
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 800;
     font-size: 24px;
@@ -43,26 +43,123 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 133.69%;
-    
+
     letter-spacing: 0.095em;
   }
 
 }
 
-.imgMain {
-  margin-top: 2.5rem;
+
+.descriptionMainMobile {
+  display: none;
+}
+
+.buttonContainer {
+  margin-top: 132px;
+}
+
+.buttonMainPrimary {
+  
+    border: 1px solid rgba(203, 223, 2, 0.5);
+    border-radius: 3px;
+    
+    margin-top: 132px;
+    padding: 0.4rem 1.5rem;
+
+}
+
+.buttonMainPrimary:hover {
+  border: 1px solid #2C2C2C;
+  border-radius: 3px;
+
+}
+
+
+.buttonMainSecondary {
+
+  border: 1px solid #2C2C2C;
+  border-radius: 3px;
+  
+  margin-left: 1rem;
+
+  margin-top: 132px;
+  padding: 0.5rem 1.6rem;
+}
+
+.buttonMainSecondary:hover {
+
+  border: 1px solid rgba(203, 223, 2, 0.5);
+
 }
 
 
 @media only screen and (max-width: 768px) {
   .container {
-    margin: 0 1rem;
+    display: flex;
+    max-width: 85%;
+
+    height: 70vh;
+
+    background-image: url(../../assets/imgMain.svg);
+    background-repeat: no-repeat;
+  
+    background-size: contain;
+
   }
 
   .content {
-    display: flex;
+    width: 100%;
     flex-direction: column;
+
+    height: 100%;
+
   }
 
-  
+  .descriptionMain {
+    margin-top: 3rem;
+    width: 100%;
+
+
+    h2 {
+      display: flex;
+
+      font-style: normal;
+      font-weight: 800;
+      font-size: 1.3rem;
+      line-height: 28px;
+      letter-spacing: 0.045em;
+    }
+
+    .imgEmoji {
+      margin-left: 0.3rem;
+    }
+
+    p {
+      margin-top: 0.5rem;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 0.9rem;
+      line-height: 133.69%;
+
+      letter-spacing: 0.095em;
+    }
+
+  }
+
+
+.buttonContainer {
+
+  display: flex;
+
+  height: 5rem;
+  align-items: center;
+
+  margin-top: 17rem;
+
+  a {
+    background-color: #121214;
+  }
+}
+
+
 }
