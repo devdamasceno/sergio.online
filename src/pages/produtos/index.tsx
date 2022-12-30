@@ -21,7 +21,8 @@ export default function Produtos() {
         <div className={styles.content}>
 
           <div className={styles.descriptionMain}>
-            <h2>Teste produtos gratuitamente <img className={styles.imgEmoji} src={emoji.src} /></h2>
+            <h1>Teste nossas soluções</h1>
+            <h2>GRATUITAMENTE</h2>
             <p>Com produtos que proporcionam resultados imediatos e benefícios comprovados, estamos aqui para tornar sua vida melhor.</p>
 
 
