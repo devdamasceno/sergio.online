@@ -1,7 +1,7 @@
 .container {
+  width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 1rem;
 
   background-image: url(../../assets/imgMain.svg);
   background-repeat: no-repeat;
@@ -75,6 +75,10 @@
 
 .buttonContainer {
   margin-top: 8rem;
+  
+  a {
+    background-color: #121214;
+  }
 }
 
 .buttonMainPrimary {
@@ -115,55 +119,69 @@
 @media only screen and (max-width: 768px) {
 
   .container {
+    display: flex;
+
     width: 100%;
-    max-width: 85%;
+    max-width: 95%;
+    height: 70vh;
+
 
     background-image: url(../../assets/imgMain.svg);
     background-repeat: no-repeat;
-
     background-size: contain;
+
+    background-position: top;
+    background-position-y: 8rem;
 
 
   }
 
   .content {
-    flex-direction: column;
+
 
   }
 
   .descriptionMain {
 
-    width: 100%;
+    margin-top: 2rem;
+
+    h1 {
+
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.2rem;
+
+    }
 
     h2 {
 
-      width: 23rem;
-      height: 22px;
+      max-width: 23rem;
 
       font-weight: 700;
       font-size: 1rem;
-      line-height: 19px;
 
       letter-spacing: 0.1rem;
-
+      margin-bottom: 1.5rem;
     }
 
     p {
 
-      width: 23rem;
+      max-width: 23rem;
 
       font-weight: 400;
       font-size: 0.95rem;
       line-height: 1.2rem;
 
       letter-spacing: 0.1rem;
+      margin-top: 0;
     }
 
   }
 
 
   .buttonContainer {
-    width: 100%;
+
+    margin-top: 15rem;
 
     a {
       background-color: #121214;
