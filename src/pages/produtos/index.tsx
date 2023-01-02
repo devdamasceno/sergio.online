@@ -1,9 +1,10 @@
 import Head from "next/head";
+import { WhatsappLogo } from "phosphor-react";
 import { Header } from "../../components/Header";
 
 import styles from './styles.module.scss';
 
-import emoji from '../../assets/emoji.svg';
+
 
 export default function Produtos() {
   return (
@@ -23,12 +24,13 @@ export default function Produtos() {
           <div className={styles.descriptionMain}>
             <h1>Teste nossas soluções</h1>
             <h2>GRATUITAMENTE</h2>
+            <div className={styles.hash}/>
             <p>Com produtos que proporcionam resultados imediatos e benefícios comprovados, estamos aqui para tornar sua vida melhor.</p>
 
 
             <div className={styles.buttonContainer}>
               <a className={styles.buttonMainPrimary} href="/comercial">Saiba mais</a>
-              <a className={styles.buttonMainSecondary} href="https://web.whatsapp.com/send?phone=5532991287531">Fale conosco</a>
+              <a className={styles.buttonMainSecondary} href="https://wa.me/5532991287531?text=Ol%C3%A1%21%21+Fale+conosco+%C3%A9+veja+como+conectar+a+sua+empresa+á+clientes+%3B%29">Fale conosco </a>
             </div>
 
           </div>

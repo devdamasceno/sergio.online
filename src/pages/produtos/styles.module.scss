@@ -53,6 +53,14 @@
 
   }
 
+  .hash {
+    margin-top: 1rem;
+    width: 5rem;
+    height: 0.2rem;
+
+    background: linear-gradient(90deg, #FFFF00 0%, rgba(255, 255, 0, 0) 170%);
+  }
+
   p {
     width: 37rem;
     height: 4.5rem;
@@ -68,50 +76,48 @@
 
 }
 
-
-.descriptionMainMobile {
-  display: none;
-}
-
 .buttonContainer {
   margin-top: 8rem;
-  
-  a {
-    background-color: #121214;
-  }
 }
 
 .buttonMainPrimary {
 
-  border: 1px solid rgba(203, 223, 2, 0.5);
+  border: 1px solid #2C2C2C;
   border-radius: 3px;
+  padding: 0.8rem 3rem;
 
-  margin-top: 132px;
-  padding: 0.4rem 1.5rem;
+  background-color: #121214;
 
 }
 
 .buttonMainPrimary:hover {
-  border: 1px solid #2C2C2C;
+
   border-radius: 3px;
 
+  padding: 0.8rem 3rem;
+
+  background-color: #2C2C2C;
+  color: #FFF;
+  border: 1px solid #FFF;
 }
 
 
 .buttonMainSecondary {
-
+  background-color: #121214;
   border: 1px solid #2C2C2C;
   border-radius: 3px;
 
   margin-left: 1rem;
-
-  margin-top: 132px;
-  padding: 0.5rem 1.6rem;
+  padding: 0.8rem 3rem;
 }
 
 .buttonMainSecondary:hover {
 
-  border: 1px solid rgba(203, 223, 2, 0.5);
+  background-color: #2C2C2C;
+  color: #FFF;
+  border: 1px solid #FFF;
+
+  padding: 0.8rem 3rem;
 
 }
 
@@ -122,58 +128,51 @@
     display: flex;
 
     width: 100%;
-    max-width: 95%;
-    height: 70vh;
-
+    max-width: 90%;
 
     background-image: url(../../assets/imgMain.svg);
     background-repeat: no-repeat;
     background-size: contain;
 
     background-position: top;
-    background-position-y: 8rem;
-
+    background-position-y: 11rem;
 
   }
 
   .content {
 
-
+    display: flex;
+    justify-content: space-between;
+    max-width: 95%;
+    width: 100%;
   }
 
   .descriptionMain {
 
     margin-top: 2rem;
+    max-width: 21rem;
 
     h1 {
-
-      font-style: normal;
       font-weight: 700;
-      font-size: 1.2rem;
-
+      font-size: 1.5rem;
+      width: 100%;
+      
     }
 
     h2 {
-
-      max-width: 23rem;
-
       font-weight: 700;
-      font-size: 1rem;
+      font-size: 1.5rem;
+      text-transform: uppercase;
 
-      letter-spacing: 0.1rem;
-      margin-bottom: 1.5rem;
     }
 
     p {
-
-      max-width: 23rem;
+      max-width: 22rem;
 
       font-weight: 400;
-      font-size: 0.95rem;
-      line-height: 1.2rem;
+      font-size: 1rem;
 
-      letter-spacing: 0.1rem;
-      margin-top: 0;
+      margin-top: 1rem;
     }
 
   }
@@ -181,12 +180,56 @@
 
   .buttonContainer {
 
-    margin-top: 15rem;
+    margin-top: 16rem;
 
-    a {
-      background-color: #121214;
-    }
   }
+
+  .buttonMainPrimary {
+
+    border: 1px solid #2C2C2C;
+    border-radius: 3px;
+
+    padding: 0.5rem 1rem;
+
+  }
+
+  .buttonMainPrimary:hover {
+
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+
+    background-color: #2C2C2C;
+    color: #FFF;
+    border: 1px solid #FFF;
+  }
+
+
+  .buttonMainSecondary {
+
+    border: 1px solid #2C2C2C;
+    border-radius: 3px;
+
+    padding: 0.5rem 1rem;
+
+  }
+
+  .whatsapp {
+
+    margin-left: 0.2rem;
+
+  }
+
+  .buttonMainSecondary:hover {
+
+    border: 1px solid #FFF;
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+
+    background-color: #2C2C2C;
+    color: #FFF;
+
+  }
+
 
 
 }
